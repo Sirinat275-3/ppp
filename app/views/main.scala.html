@@ -1,0 +1,27 @@
+@(content:Html)
+<html lang="en">
+    <head>
+        <title>คุรุคิริ ไอศรีม</title>
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="/assets/stylesheets/bootstrap-3.3.7-dist/css/bootstrap.css">
+        <link href="../../public/stylesheets/bootstrap-3.3.7-dist/css/bootstrap.css">
+        <h1 ><p style="background-color:sandybrown" align=center> <strong> <b> คุรุคิริ ไอศรีม </b></strong></p></h1>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+            </div>
+            <div class="row"  >
+                <div class="col-md-2" >
+                    @menu()
+                </div>
+                <div class=" col-md-10" style="background-color: #f5e79e">
+                @content
+                </div>
+            </div>
+            <div class="row">
+            @address()
+            </div>
+        </div>
+    </body>
+</html>
