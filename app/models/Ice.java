@@ -6,7 +6,9 @@ package models;
 public class Ice {
     private  String id,name;
     private String brand;
-    private double price,number;
+    private String size;
+    private String number;
+    private double price;
 
     public Ice() {
     }
@@ -23,6 +25,8 @@ public class Ice {
     public String getName() {
         return name;
     }
+    public
+    String getSize() {return size;}
 
     public void setName(String name) {
         this.name = name;
@@ -44,20 +48,18 @@ public class Ice {
         this.price = price;
     }
 
-    public double getNumber() {
-        return number;
-    }
+    public String getNumber() {return number;}
 
-    public void setNumber(double number) {
-        this.number = number;
-    }
+    public void setNumber(String number) {this.number = number;}
 
-    public Ice(String id, String name, String brand, double price, double number) {
+
+    public Ice(String id, String name, String brand,String number ,String size, double price) {
 
         this.id = id;
         this.name = name;
         this.brand = brand;
         this.price = price;
         this.number = number;
+        this.size = size;
     }
 }

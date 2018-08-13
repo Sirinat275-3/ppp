@@ -7,8 +7,12 @@ GET     /                           controllers.Application.index()
 GET     /pormotions                 controllers.Application.pormotions()
 GET     /oder                       controllers.Application.oder()
 GET     /product                    controllers.Application.product()
-GET     /inputCandy                 controllers.Application.inputCandy()
 GET     /pt                         controllers.Application.pt()
+GET     /inputIce                   controllers.Application.inputIce()
+GET     /sirinat                    controllers.Application.sirinat()
+GET     /water
+POST    /postIce                    controllers.Application.PostIce()
+
 
 
 # Map static resources from the /public folder to the /assets URL path
